@@ -1,0 +1,17 @@
+.stat {
+
+	&__item {
+		max-width: 160px;
+
+		@extend .flex;
+		@extend .flex-col;
+		@extend .align-start;
+
+		&-count {
+			font-size: 72px;
+			color: #5E95FF;
+
+			@extend .fw-sb;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.team {
+
+	&__subtitle {
+		margin-top: 32px;
+	}
+
+	&__list {
+		margin-top: 40px;
+	}
+
+	&__item {
+		width: calc(50% - 16px);
+
+		&-img {
+			@extend .flex;
+			@extend .align-center;
+			@extend .just-center;
+		}
+
+		& h4 {
+			margin-top: 12px;
+
+			@extend .fw-sb;
+		}
+
+		&-bio {
+			margin-top: 12px;
+			color: #B8B8B8;
+		}
+
+		&-citate {
+			margin-left: 32px;
+			max-width: 255px;
+		}
+	}
+
+	&__master {
+		margin-top: 40px;
+
+		&-title {
+			font-size: 24px;
+
+			@extend .fw-sb;
+		}
+
+		&-list {
+			margin: 0;
+			padding: 0;
+			padding-top: 32px;
+			margin-top: -24px;
+			margin-right: -32px;
+		}
+
+		&-item {
+			padding: 8px 32px 8px 12px;
+			background-image: linear-gradient(90deg, #FFFFFF 56.76%, rgba(255, 255, 255, 0) 100%);
+			border-radius: 58px;
+			list-style-type: none;
+			width: calc(20% - 32px);
+			margin-top: 24px;
+			margin-right: 32px;
+
+			@extend .flex;
+			@extend .align-center;
+
+			&:before {
+				content: '';
+				width: 6px;
+				height: 6px;
+				background-image: linear-gradient(90deg, #64B9FF 0%, #5E95FF 100%);
+				box-shadow: 1px 1px 4px rgba(94, 151, 255, 0.35);
+				border-radius: 50%;
+				margin-right: 12px;
+			}
+		}
+	}
+}
