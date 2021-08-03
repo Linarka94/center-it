@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Open Sans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("./fonts/OpenSans-Bold.woff") format("woff"), url("./fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Open Sans";
   font-display: swap;
-  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("./fonts/OpenSans-SemiBold.woff") format("woff"), url("./fonts/OpenSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Open Sans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("./fonts/OpenSans-Regular.woff") format("woff"), url("./fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -419,9 +419,9 @@ body {
 
 .main__banner {
   height: 600px;
-  background: url("/img/header/bg-at.png"), -webkit-gradient(linear, left top, left bottom, from(#F5FBFF), to(rgba(255, 255, 255, 0))), #D2E6F1;
-  background: url("/img/header/bg-at.png"), -o-linear-gradient(top, #F5FBFF 0%, rgba(255, 255, 255, 0) 100%), #D2E6F1;
-  background: url("/img/header/bg-at.png"), linear-gradient(180deg, #F5FBFF 0%, rgba(255, 255, 255, 0) 100%), #D2E6F1;
+  background: url("./img/header/bg-at.png"), -webkit-gradient(linear, left top, left bottom, from(#F5FBFF), to(rgba(255, 255, 255, 0))), #D2E6F1;
+  background: url("./img/header/bg-at.png"), -o-linear-gradient(top, #F5FBFF 0%, rgba(255, 255, 255, 0) 100%), #D2E6F1;
+  background: url("./img/header/bg-at.png"), linear-gradient(180deg, #F5FBFF 0%, rgba(255, 255, 255, 0) 100%), #D2E6F1;
   background-repeat: no-repeat;
   background-position: center;
 }
