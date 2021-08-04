@@ -8,24 +8,27 @@ window.addEventListener("DOMContentLoaded", function () {
 			delay: 5000,
 			disableOnInteraction: false,
 		},
+		effect: "coverflow",
+		centeredSlides: true,
+		slidesPerView: 1.1,
+		spaceBetween: 36,
+		coverflowEffect: {
+			rotate: 20,
+			stretch: 0,
+			depth: 200,
+			modifier: 1,
+			slideShadows: false,
+	},
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
 		},
 		breakpoints: {
-			767: {
-				effect: "coverflow",
-				centeredSlides: true,
-				slidesPerView: 2,
-				spaceBetween: 36,
-				coverflowEffect: {
-					rotate: 20,
-					stretch: 5,
-					depth: 200,
-					modifier: 1,
-					slideShadows: false,
-				},
-			}
+			768: {
+				effect: "slide",
+				centeredSlides: false,
+				slidesPerView: 1,
+			},
 		}
 	});
 
