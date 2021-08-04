@@ -39,5 +39,9 @@
 		@include for-tablet-l {
 			margin-right: 48px;
 		}
+
+		@include for-tablet {
+			margin-right: 24px;
+		}
 	}
 }

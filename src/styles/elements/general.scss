@@ -2,10 +2,20 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 165px;
-	
+
 	@include for-tablet-l {
 		padding-left: 96px;
 		padding-right: 96px;
+	}
+
+	@include for-tablet {
+		padding-left: 48px;
+		padding-right: 48px;
+	}
+
+	@include for-mobile {
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 }
 
@@ -53,6 +63,24 @@
 			background-color: #B8B8B8;
 			color: #FFFFFF;
 		}
+
+		@include for-mobile {
+			border: 0;
+			padding: 0;
+
+			&:after {
+				content: '';
+				width: 5px;
+				height: 8px;
+				background-image: url("./img/icon/arrow-right.svg");
+				display: inline-block;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				margin-left: 6px;
+				vertical-align: middle;
+			}
+		}
 	}
 
 	&[disabled] {
@@ -66,11 +94,20 @@
 	line-height: 1.1;
 
 	@extend .fw-sb;
+
+	@include for-mobile {
+		font-size: 24px;
+	}
 }
 
 .block {
 	padding-top: 60px;
 	padding-bottom: 60px;
+
+	@include for-mobile {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .bg {
@@ -88,6 +125,10 @@
 	padding: 0;
 	font-family: 'Open Sans', 'Helvetica', sans-serif;
 	font-size: 15px;
+
+	@include for-mobile {
+		font-size: 14px;
+	}
 }
 
 .input {
@@ -97,10 +138,14 @@
 	@extend .w-100;
 	@extend .transition;
 
-	 &:hover,
-	 &:focus {
-		 border-color: #5E95FF;
-	 }
+	@include for-mobile {
+		height: 32px;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: #5E95FF;
+	}
 
 	& + label {
 		position: absolute;
@@ -150,6 +195,7 @@
 				margin-right: 8px;
 				color: #5E95FF;
 				font-size: 18px;
+				flex-shrink: 0;
 
 				@extend .flex;
 				@extend .align-center;
@@ -179,6 +225,10 @@
 	margin-top: 5px;
 	display: none;
 	padding-left: 8px;
+
+	@include for-mobile {
+		margin-top: 0;
+	}
 
 	&.active {
 		display: block;

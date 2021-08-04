@@ -19,6 +19,12 @@
 		@extend .align-center;
 		@extend .just-center;
 
+		@include for-mobile {
+			width: calc(33.333% - 24px);
+			filter: grayscale(0);
+			opacity: 1;
+		}
+
 		&:hover {
 			filter: grayscale(0);
 			opacity: 1;

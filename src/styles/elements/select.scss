@@ -3,6 +3,11 @@
 .select2 {
 	width: calc(50% - 16px) !important;
 
+	@include for-mobile {
+		width: 100% !important;
+		margin-top: 24px;
+	}
+
 	&-container--default {
 
 		&.select2-container--focus {

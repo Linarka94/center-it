@@ -2,8 +2,16 @@
 	padding-top: 0;
 	padding-bottom: 20px;
 
+	@include for-mobile {
+		padding-top: 0;
+	}
+
 	& .title {
 		padding-bottom: 40px;
+
+		@include for-mobile {
+			padding-bottom: 0;
+		}
 	}
 
 	& .tns-nav {

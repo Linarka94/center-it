@@ -5,11 +5,33 @@
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 3px;
 		margin-top: 40px;
+
+		@include for-tablet {
+			flex-direction: column;
+		}
+
+		@include for-mobile {
+			background: 0;
+			box-shadow: none;
+			margin-top: 20px;
+		}
 	}
 
 	&__form {
 		width: 74%;
 		padding: 40px 104px 40px 65px;
+
+		@include for-tablet-l {
+			padding-right: 65px;
+		}
+
+		@include for-tablet {
+			width: 100%;
+		}
+
+		@include for-mobile {
+			padding: 0;
+		}
 
 		&-title {
 			color: #5E95FF;
@@ -17,13 +39,35 @@
 			padding-bottom: 40px;
 
 			@extend .fw-sb;
+
+			@include for-mobile {
+				padding-bottom: 0;
+			}
 		}
 
 		&-control {
 			margin-top: 56px;
 
+			@include for-tablet-l {
+				flex-direction: column-reverse;
+			}
+
+			@include for-mobile {
+				margin-top: 24px;
+				align-items: flex-start;
+			}
+
 			& .btn {
 				margin-right: 32px;
+
+				@include for-tablet-l {
+					margin-right: 0;
+					margin-top: 32px;
+				}
+
+				@include for-mobile {
+					margin-top: 24px;
+				}
 			}
 		}
 
@@ -32,6 +76,11 @@
 			&__wrap {
 				width: calc(50% - 16px);
 				margin-top: 32px;
+
+				@include for-mobile {
+					width: 100%;
+					margin-top: 24px;
+				}
 
 				&.input__wrap--w-100 {
 
@@ -55,6 +104,13 @@
 				}
 			}
 		}
+
+		&-group {
+
+			@include for-mobile {
+				flex-direction: column;
+			}
+		}
 	}
 
 	&__contacts {
@@ -65,6 +121,15 @@
 		color: #FFFFFF;
 		background-image: linear-gradient(90deg, #64B9FF 0%, #5E95FF 100%);
 		border-radius: 0px 3px 3px 0px;
+
+		@include for-tablet {
+			width: 100%;
+			padding-bottom: 40px;
+		}
+
+		@include for-mobile {
+			display: none;
+		}
 
 		&-item {
 
@@ -100,5 +165,4 @@
 			}
 		}
 	}
-
 }

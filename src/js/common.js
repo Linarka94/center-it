@@ -24,4 +24,14 @@ $(document).ready(function () {
 		}
 	});
 
+	if ($('#toggleMenu').length > 0) {
+		$('#toggleMenu').on('click', function () {
+			if ($(this).hasClass('isActive')) {
+				$(this).removeClass('isActive')
+			} else {
+				$(this).addClass('isActive');
+			}
+		});
+	}
+
 });
