@@ -27090,8 +27090,10 @@
 			$('#toggleMenu').on('click', function () {
 				if ($(this).hasClass('isActive')) {
 					$(this).removeClass('isActive');
+					$(document.body).removeClass('lock');
 				} else {
 					$(this).addClass('isActive');
+					$(document.body).addClass('lock');
 				}
 			});
 		}
