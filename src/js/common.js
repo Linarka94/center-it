@@ -27,9 +27,11 @@ $(document).ready(function () {
 	if ($('#toggleMenu').length > 0) {
 		$('#toggleMenu').on('click', function () {
 			if ($(this).hasClass('isActive')) {
-				$(this).removeClass('isActive')
+				$(this).removeClass('isActive');
+				$(document.body).removeClass('lock');
 			} else {
 				$(this).addClass('isActive');
+				$(document.body).addClass('lock');
 			}
 		});
 	}
