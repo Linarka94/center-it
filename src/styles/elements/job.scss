@@ -164,5 +164,14 @@
 				@extend .align-center;
 			}
 		}
+		&--card {
+			width: 26%;
+			background-image: url("img/pics/card.png");
+			border-radius: 0px 3px 3px 0px;
+
+			@include for-tablet {
+				display: none;
+			}
+		}
 	}
 }

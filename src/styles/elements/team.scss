@@ -123,3 +123,48 @@
 		}
 	}
 }
+
+
+.asdf {
+	background-color: #5caaea;
+
+	& .div {
+		background-color: red;
+	}
+
+	& ul {
+		display: flex;
+
+		& li {
+			display: flex;
+			align-items: center;
+
+			& .div {
+				background-color: green;
+
+				&.div--ccc {
+					background-color: #ccc;
+				}
+
+				& span {
+					color: red;
+				}
+
+				& > span {
+					text-transform: uppercase;
+					color: black;
+				}
+			}
+
+			& + li {
+				&:before {
+					content: '-';
+					display: inline-block;
+					margin-left: 16px;
+					margin-right: 16px;
+					font-size: 32px;
+				}
+			}
+		}
+	}
+}

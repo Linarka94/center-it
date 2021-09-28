@@ -36,21 +36,23 @@ window.addEventListener("DOMContentLoaded", function () {
 
 		function startSwiper(swiperContainerSelector) {
 			const swiperContainer = document.querySelector(swiperContainerSelector);
-			const swiperWrapper = swiperContainer.querySelector("div");
-			const swiperSlides = Array.from(swiperWrapper.children);
-			const swiperPaginator = document.createElement('div');
-			swiperPaginator.classList.add('swiper-pagination');
 
-			swiperContainer.className = 'swiper-container';
-			swiperContainer.classList.add(swiperContainerSelector.slice(1));
-			swiperWrapper.className = 'swiper-wrapper';
-			swiperSlides.forEach((slide) => {
-				slide.classList.add('swiper-slide');
-			});
+			if (!!swiperContainer) {
+				const swiperWrapper = swiperContainer.querySelector("div");
+				const swiperSlides = Array.from(swiperWrapper.children);
+				const swiperPaginator = document.createElement('div');
+				swiperPaginator.classList.add('swiper-pagination');
 
-			swiperContainer.append(swiperPaginator);
+				swiperContainer.className = 'swiper-container';
+				swiperContainer.classList.add(swiperContainerSelector.slice(1));
+				swiperWrapper.className = 'swiper-wrapper';
+				swiperSlides.forEach((slide) => {
+					slide.classList.add('swiper-slide');
+				});
 
-			const options = {
+				swiperContainer.append(swiperPaginator);
+
+				const options = {
 					init: false,
 					autoHeight: true,
 					loop: true,
@@ -76,13 +78,16 @@ window.addEventListener("DOMContentLoaded", function () {
 					}
 				};
 
-			const mySwiper = new Swiper(swiperContainerSelector, options);
+				const mySwiper = new Swiper(swiperContainerSelector, options);
 
-
-			mySwiper.init();
+				mySwiper.init();
+			}
 		}
 
 		startSwiper('.serviceSwiper');
 		startSwiper('.stepSwiper');
+		startSwiper('.teamSwiper');
+		startSwiper('.secretSwiper');
+
 	}
 });

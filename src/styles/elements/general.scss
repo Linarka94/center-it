@@ -115,6 +115,17 @@
 	&-gray {
 		background-image: linear-gradient(123.24deg, #F4F4F4 0%, #F0F0F0 100%);
 	}
+
+	&-blue {
+		background-image: linear-gradient(90deg, #64B9FF 0%, #5E95FF 100%);
+		color: #ffffff;
+		opacity: 0.9;
+
+		& .stat__item-count {
+			color: #ffffff;
+			text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.4);
+		}
+	}
 }
 
 .input,
