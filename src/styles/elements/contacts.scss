@@ -60,3 +60,73 @@
     }
   }
 }
+
+//Всплывающая форма
+
+.modal {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #383838;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url('./img/popup/banner.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1001;
+
+  &.show {
+    display: block;
+  }
+  
+  &__bg {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #284B67 0%, #263F6D 100%);
+    opacity: 0.7;
+    z-index: 1000;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &-request {
+    max-width: 922px;
+    padding: 24px 24px 207px 40px;
+  }
+
+  &-close {
+    padding: 0;
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  & h2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  & p {
+    padding-bottom: 16px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #5e95ff;
+  }
+}

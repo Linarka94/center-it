@@ -3,8 +3,8 @@
 
 <section class="container block">
     <h2 class="title">Компания</h2>
-    <div class="flex flex-row step__subtitle">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor dignissim libero eu sit ut. Non cras aliquam
+    <div class="about flex align-start">
+        <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor dignissim libero eu sit ut. Non cras aliquam
             dignissim diam laoreet egestas aliquet rhoncus. At volutpat morbi convallis habitasse quis vitae, nibh. Odio
             a augue enim odio lorem aliquet egestas sollicitudin. Diam malesuada cursus aliquam nibh quis interdum dis.
             Phasellus neque viverra feugiat mattis viverra aliquam. Ut magna ultrices justo a venenatis eleifend.
@@ -12,7 +12,11 @@
             consequat nullam turpis volutpat et pharetra. Ut integer neque justo rutrum libero mi eget elementum leo.
             Ultrices tempor nisl aliquam nibh feugiat est, magna vulputate blandit. Elit fermentum pulvinar vitae,
             quisque.</p>
-        <img src="/img/company/company.png" alt="">
+        <picture>
+            <source srcset="/img/company/company-small.png" media="(max-width: 768px)">
+            <source srcset="/img/company/company.png">
+            <img srcset="/img/company/company.png" alt="">
+        </picture>
     </div>
 </section>
 <section class="container container--history">
@@ -121,9 +125,9 @@
         </div>
     </div>
 </section>
-<section class="team block bg-gray company">
-    <div class="container">
-        <div class="team__list flex align-start just-between teamSwiper">
+<section class="team block bg-gray crew">
+    <div class="container teamSwiper">
+        <div class="team__list flex align-start just-between">
             <div class="team__item flex align-stretch flex-col">
                 <img class="team__item-img" src="./img/company/crew1.png" alt="">
                 <h4>Петр Иванов</h4>

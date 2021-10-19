@@ -36,6 +36,10 @@ body {
 
 .just {
 
+	&-start {
+		justify-content: flex-start;
+	}
+
 	&-center {
 		justify-content: center;
 	}
@@ -43,6 +47,11 @@ body {
 	&-between {
 		justify-content: space-between;
 	}
+
+	&-end {
+		justify-content: flex-end;
+	}
+
 }
 
 .align {

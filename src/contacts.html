@@ -6,10 +6,14 @@
     <div class="job__shadow flex">
         <div class="job__form contacts__map">
             <div style="position:relative;overflow:hidden;">
-                <a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
+                <a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps"
+                   style="color:#eee;font-size:12px;position:absolute;top:0px;">
                     Казань
                 </a>
-                <a href="https://yandex.ru/maps/43/kazan/house/ulitsa_pushkina_18/YEAYdwVkQUYPQFtvfXt5eHRmYg==/?ll=49.124686%2C55.789941&utm_medium=mapframe&utm_source=maps&z=19" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Пушкина, 18 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUmvOw8hA" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+                <a href="https://yandex.ru/maps/43/kazan/house/ulitsa_pushkina_18/YEAYdwVkQUYPQFtvfXt5eHRmYg==/?ll=49.124686%2C55.789941&utm_medium=mapframe&utm_source=maps&z=19"
+                   style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Пушкина, 18 — Яндекс.Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUmvOw8hA" width="100%" height="100%" frameborder="0"
+                        allowfullscreen="true" style="position:relative;"></iframe>
             </div>
         </div>
         <div class="job__contacts">
@@ -20,7 +24,8 @@
             </div>
             <div class="job__contacts-item">
                 Адрес
-                <a href="https://yandex.ru/maps/-/CCUiqOfNPC" title="Показать на карте" target="_blank">г. Казань, ул. Пушкина,
+                <a href="https://yandex.ru/maps/-/CCUiqOfNPC" title="Показать на карте" target="_blank">г. Казань, ул.
+                    Пушкина,
                     д. 18</a>
             </div>
             <div class="job__contacts-item">
@@ -45,7 +50,7 @@
         <div class="job__form">
             <h3 class="job__form-title">Заполните форму и мы свяжемся с вами,
                 чтобы обсудить ваш проект</h3>
-            <form action="/" method="post">
+            <form action="/" method="post" id="submitForm">
                 <div class="flex just-between align-start job__form-group">
                     <div class="input__wrap input__wrap--mt0">
                         <input type="text" name="name" id="name" class="input" autocomplete="off" required>
@@ -87,5 +92,17 @@
         <div class="job__contacts job__contacts--card"></div>
     </div>
 </section>
+
+<div class="modal__bg"></div>
+<div class="modal modal-request">
+    <div class="flex flex-col">
+        <div class="flex just-end">
+            <button class="modal-close flex just-end" type="button"><img src="./img/popup/x.png"></button>
+        </div>
+        <h2 class="title">Ваша заявка успешно отправлена!</h2>
+        <p>Перезвоним вам в течение часа, чтобы узнать подробности о вашем проекте и найти для него лучшее решение</p>
+        <p>А пока можете <a href="">ознакомиться с нашей компанией</a></p>
+    </div>
+</div>
 
 @@include('./html-include/_footer.html')
